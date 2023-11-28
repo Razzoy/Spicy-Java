@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="container-main">
+        <!-- GLOBAL HEADER -->
+        <header class="header-main">
+            <figure>
+                <img src="assets/images/Background.jpg" alt="">
+                <img src="assets/images/Logo-Spicy-White.png" alt="">
+            </figure>
+        </header>
+        <!-- GLOBAL NAVIGATION -->
+        <nav class="nav-main">
+            <ul>
+                <li><a href="#">Start</a></li>
+                <li>|</li>
+                <li><a href="#spi">Om Spicy</a></li>
+                <li>|</li>
+                <li><a href="#gal">Galleri</a></li>
+                <li>|</li>
+                <li><a href="#fav">Favorit</a></li>
+                <li>|</li>
+                <li><a href="#" onclick="window.myDialog.show()" ;>Kontakt</a></li>
+                <dialog id="myDialog">
+                    <div class="container-dialog">
+                        <form action="index.html">
+                            <fieldset>
+                                <input type="text" placeholder="Navn:" required pattern="[A-Za-zÆØÅæøå ]{2,}" required>
+                                <input type="text" placeholder="Email:" required pattern="[A-Za-z0-9@]{@,}" required>
+                                <input type="number" placeholder="Tlf nr:" min="10000000" max="99999999" required>
+                                <textarea rows="6" placeholder="Note:"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <input class="button" id="reset" type="reset" value="Reset">
+                                <input class="button" id="submit" type="submit"  value="Submit">
+                            </fieldset>
+                        </form>
+                    </div>
+                </dialog>
+            </ul>
+        </nav>
+        <!-- MAIN SECTION -->
+        <main>
+            <section class="section-about">
+                <header>
+                    <h2 id="spi">Om Spicy</h2>
+                </header>
+                <div class="container-grid">
+                    <article>
+                        <header>
+                            <h3>Konceptet Spicy</h3>
+                        </header>
+                        <p> Accusamus rem nesciunt optio dicta id odio aliquid! Modi minima, neque quas ipsa voluptatem
+                            fuga quo eius delectus dicta! Maxime, impedit. Et aperiam delectus quam voluptates quaerat
+                            praesentium voluptate tempore. corrupti amet voluptat!</p>
+                        <p>Nemo, aperiam et rerum eius doloribus tenetur velit in quas, provident enim laborum.
+                            Explicabo culpa sed esse accusamus eius molestiae, nobis consectetur veritatis aliquam alias
+                            vero corporis saepe doloremque, laboriosam illo hic.</p>
+                        <p>Quasi neque vitae harum ad magnam similique ipsam eum! Quia consequuntur esse dolorum beatae
+                            amet voluptatibus laboriosam eveniet unde ad ut expedita incidunt ipsa fugiat.</p>
+                        <footer>
+                            <a href="#">Læs mere</a>
+                        </footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h3>Produkterne</h3>
+                        </header>
+                        <p>Expedita veritatis atque repellendus beatae. Placeat culpa vero quibusdam, exercitationem
+                            nobis iste cupiditate in velit, possimus adipisci a aut accusamus, iure enim.</p>
+                        <p>Quisquam consequatur fugit unde voluptatibus cumque quia officia earum repellat optio saepe.
+                            Corrupti laudantium cum, id adipisci est quasi repudiandae deserunt consectetur!</p>
+                        <p>Quasi, aspernatur doloremque? Similique numquam sapiente deleniti, fugiat accusamus at itaque
+                            dolorum. Vero expedita veritatis doloribus rem maxime accusamus earum reiciendis
+                            reprehenderit!</p>
+                        <footer>
+                            <a href="#">Læs mere</a>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+            <section class="section-gallery">
+                <header>
+                    <h2 id="gal">galleri</h2>
+                </header>
+                <div class="container-grid" id="gallery">
+                    <img src="assets/images/Product/Chili-02.jpg" alt="">
+                    <img src="assets/images/Product/Chili-01.jpg" alt="">
+                    <img src="assets/images/Product/Chili-03.jpg" alt="">
+                    <img src="assets/images/Product/Chili-04.jpg" alt="">
+                    <img src="assets/images/Product/Chili-05.jpg" alt="">
+                    <img src="assets/images/Product/Chili-06.jpg" alt="">
+                </div>
+            </section>
+            <section class="section-favorite">
+                <header>
+                    <h2 id="fav">vælg din favorit</h2>
+                </header>
+                <div class="container-grid" id="favorite">
+                    <img src="assets/images/Product/Choose-01.jpg" alt="">
+                    <div class="container-images">
+                        <img src="assets/images/Product/Choose-02.jpg" alt="">
+                        <img src="assets/images/Product/Choose-03.jpg" alt="">
+                        <img src="assets/images/Product/Choose-04.jpg" alt="">
+                        <img src="assets/images/Product/Choose-05.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- GLOBAL FOOTER -->
+        <footer class="footer-main">
+            <section>
+                <header>
+                    <h2>kontakt spicy:</h2>
+                </header>
+                <ul>
+                    <li>SPICY <span>Hot</span>Company</li>
+                    <li>Boulevarden 39</li>
+                    <li>9000 Aalborg</li>
+                    <li>Send os en mail:</li>
+                    <li>Ring til os:</li>
+                </ul>
+                <footer>
+                    <img src="assets/images/Some-Facebook.png" alt="">
+                    <img src="assets/images/SoMe-Twitter.png" alt="">
+                    <img src="assets/images/SoMe-Youtube.png" alt="">
+                </footer>
+            </section>
+            <section>
+                <header>
+                    <h2>google maps:</h2>
+                </header>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2154.0033866428566!2d10.381293277211537!3d57.32486626982432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464f25ec75e4710d%3A0x90c4caf645b1baf7!2zTsO4cnJlZ2FkZSAyNiwgOTMwMCBTw6ZieQ!5e0!3m2!1sda!2sdk!4v1699351600606!5m2!1sda!2sdk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
