@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spicy</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/page.js" defer></script>
 </head>
 
 <body>
@@ -28,23 +29,34 @@
                 <li>|</li>
                 <li><a href="#fav">Favorit</a></li>
                 <li>|</li>
-                <li><a href="#" onclick="window.myDialog.show()" ;>Kontakt</a></li>
-                <dialog id="myDialog">
-                    <div class="container-dialog">
+                <li><a id="modalButton">Kontakt</a></li>
+                <div id="modal" class="modal">
+                    <div id="containerModel" class="container-modal">
                         <form action="index.html">
                             <fieldset>
-                                <input type="text" placeholder="Navn:" required pattern="[A-Za-zÆØÅæøå ]{2,}" required>
-                                <input type="text" placeholder="Email:" required pattern="[A-Za-z0-9@]{@,}" required>
-                                <input type="number" placeholder="Tlf nr:" min="10000000" max="99999999" required>
-                                <textarea rows="6" placeholder="Note:"></textarea>
+                                <div id="nameBox" class="inputBoxes">
+                                    <input id="name" type="text" placeholder="Navn:">
+                                    <p class="errors" id="errorName">Dit navn skal have mindst 2 tegn</p>
+                                </div>
+                                <div id="emailBox" class="inputBoxes">
+                                    <input id="email" type="text" placeholder="Email:">
+                                    <p class="errors" id="errorEmail">Din mail skal udfyldes korrekt</p>
+                                </div>
+                                <div id="phoneBox" class="inputBoxes">
+                                    <input id="phone" type="number" placeholder="Tlf nr:">
+                                    <p class="errors" id="errorPhone">Din nummer skal bestå af 8 cifre</p>
+                                </div>
+                                <div class="inputBoxes">
+                                    <textarea rows="6" placeholder="Note:"></textarea>
+                                </div>
                             </fieldset>
                             <fieldset>
-                                <input class="button" id="reset" type="reset" value="Reset">
-                                <input class="button" id="submit" type="submit"  value="Submit">
+                                <button class="button" id="cancel" type="button">Cancel</button>
+                                <button class="button" id="submit" type="submit">Submit</button>
                             </fieldset>
                         </form>
                     </div>
-                </dialog>
+                </div>
             </ul>
         </nav>
         <!-- MAIN SECTION -->
