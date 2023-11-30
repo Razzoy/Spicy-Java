@@ -1,7 +1,7 @@
 //OPEN & CLOSE MODAL
 
 const openButton = document.getElementById('modalButton');
-const myModal = document.getElementById('modal');
+const myModal = document.getElementById('containerModal');
 const cancelButton = document.getElementById('cancel')
 
 
@@ -17,11 +17,8 @@ cancelButton.addEventListener('click', function () {
 
 const formParent = document.getElementById('containerModel');
 const myName = document.getElementById('name');
-const nameBox = document.getElementById('nameBox');
 const myEmail = document.getElementById('email');
-const emailBox = document.getElementById('emailBox');
 const myPhone = document.getElementById('phone');
-const phoneBox = document.getElementById('phoneBox');
 
 const myButton = document.getElementById('submit');
 const errorName = document.getElementById('errorName');
@@ -64,7 +61,6 @@ myButton.addEventListener('click', (event) => {
             myName.classList.add('errorMarking');
             errorName.style.display = 'inline-block';
 
-            // errorResponse(nameBox, 'Dit navn skal have mindst 2 tegn');
         } else {
             myName.classList.remove('errorMarking');
             errorName.style.display = 'none';
@@ -77,7 +73,6 @@ myButton.addEventListener('click', (event) => {
             myPhone.classList.add('errorMarking');
             errorPhone.style.display = 'inline-block';
 
-            // errorResponse(phoneBox, 'Din nummer skal bestå af 8 cifre');
         } else {
             myPhone.classList.remove('errorMarking');
             errorPhone.style.display = 'none';
@@ -92,7 +87,6 @@ myButton.addEventListener('click', (event) => {
             myEmail.classList.add('errorMarking');
             errorEmail.style.display = 'inline-block';
 
-            // errorResponse(emailBox, 'Din mail skal udfyldes korrekt');
         }
     }
 });
@@ -104,11 +98,3 @@ function validateEmail(email) {
 
     return isValid;
 }
-
-// function errorResponse(box, errorMessage) {
-//         //Lav en fejl tekst
-//         let responseText = document.createElement('p');
-//         box.appendChild(responseText);
-//         responseText.classList.add('errorText');
-//         responseText.innerText = errorMessage;
-// }
