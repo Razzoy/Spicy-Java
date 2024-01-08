@@ -15,7 +15,7 @@ cancelButton.addEventListener('click', function () {
 
 //FORM VALIDATION
 
-const formParent = document.getElementById('containerModel');
+const formParent = document.getElementById('containerModal');
 const myName = document.getElementById('name');
 const myEmail = document.getElementById('email');
 const myPhone = document.getElementById('phone');
