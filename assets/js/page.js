@@ -44,7 +44,7 @@ myButton.addEventListener('click', (event) => {
 
         let myResponseElement = document.createElement('h2');
         myResponseElement.innerText = 'Tak for Tilmeldingen!';
-        myResponseElement.classList.add('thanks')
+        myResponseElement.classList.add('thanks');
         formParent.appendChild(myResponseElement);
 
         myResponseElement.addEventListener('click', function () {
